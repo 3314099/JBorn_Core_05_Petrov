@@ -1,21 +1,33 @@
 package ru.petrov.s02;
 
+
 public class Task03 {
 
     public static void main(String[] args) {
-        new Task03();
+    int x,y;
+    x = 5;
+    y = 6;
+
+        int max = max(x,y);
+        System.out.println(max);
+        int min = min(x,y);
+        System.out.println(min);
     }
 
-    public Task03(){
+    public static int max (int x, int y) {
 
-        int x ,y ;
 
-        x = 8;
-        y = 6;
+        int max = Math.max(x, y);
 
-        System.out.println(Math.max(x, y));
-        System.out.println(Math.min(x, y));
+        return max;
+    }
 
+    public static int min (int x, int y) {
+
+
+        int min = Math.min(x, y);
+
+        return min;
     }
 
 }
