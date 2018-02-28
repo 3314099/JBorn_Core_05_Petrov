@@ -1,27 +1,26 @@
+
 package ru.petrov.s02;
+import java.util.Scanner;
 
 public class Task02 {
 
     public static void main(String[] args) {
-        new Task02();
+        double y = val(1);
+        System.out.println(y);
     }
 
-    public Task02(){
+    public static double val (double n) {
 
-        int x = 5; // значение
-        int i = 2; //степень
 
-        //  double y = Math.sin(x);
-        double y;
+    double z;
 
-        if (x > 0) {
-            y = Math.pow(Math.sin(x), i);
+        if (n > 0) {
+            z = Math.pow(Math.sin(n), 2);
         } else {
-            y = 1 - (2 * Math.sin(Math.pow(x, i)));
+            z = 1 - (2 * Math.sin(Math.pow(n, 2)));
         }
 
-        System.out.printf("y равен %.8f \n", y);
-
+        return z;
     }
 
 }
