@@ -3,18 +3,22 @@ package ru.petrov.s02;
 public class Task04 {
 
     public static void main(String[] args) {
-        new Task04();
+        double a = val(1,300);
+        if (a == 1){
+            System.out.println("Значение в колометрах больше значения в футах");
+        } else{
+            System.out.println("Значение в колометрах меньше значения в футах");
+        }
     }
 
-    public Task04(){
-
-        int x ,y ;
-        x = 1; // км
-        y = 3000; // футы: 1фут = 0.305м
-
-        System.out.println(Math.min(x , (y * 0.000305)));
-
+    public static double val(double x, double y) {
+        int a = 0;
+        if (x > (y * 0.000305)){
+            a = 1;
+        }
+        return a;
     }
 
 }
+
 
