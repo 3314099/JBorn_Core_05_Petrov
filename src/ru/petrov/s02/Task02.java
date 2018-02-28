@@ -1,18 +1,15 @@
-
 package ru.petrov.s02;
-import java.util.Scanner;
 
 public class Task02 {
 
     public static void main(String[] args) {
-        double y = val(1);
+        double y = area(1);
         System.out.println(y);
     }
 
-    public static double val (double n) {
+    public static double area(double n) {
 
-
-    double z;
+        double z;
 
         if (n > 0) {
             z = Math.pow(Math.sin(n), 2);
