@@ -3,21 +3,30 @@ package ru.petrov.s02;
 public class Task05 {
 
     public static void main(String[] args) {
-        val(3, 7);
+        int com = comparison(3, 7);
+
+        if (com == 1) {
+            System.out.println("Площадь круга больше площади квадрата");
+        } else {
+            System.out.println("Площадь квадрата больше площади круга");
+        }
     }
 
-    public static double val(double x, double y) {
+    public static int comparison(double radius, double side) {
 
-        x = Math.PI * Math.pow(x, 2);
-        y = Math.pow(y, 2);
+        radius = Math.PI * Math.pow(radius, 2);
+        side = Math.pow(side, 2);
 
-        if (x > y) {
-            System.out.println("Площадь круга " + x + " больше площади квадрата " + y);
-            return y;
+        int com;
+
+        if (radius > side) {
+            com = 1;
         } else {
-            System.out.println("Площадь квадрата " + x + " больше площади круга " + y);
-            return x;
+            com = 0;
         }
+
+        return com;
+
     }
 
 }
