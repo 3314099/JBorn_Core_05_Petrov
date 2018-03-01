@@ -4,38 +4,39 @@ public class Task10 {
 
     public static void main(String[] args) {
 
-        int x = day(3);
-
-        switch (x) {
-            case 1:
-                System.out.println("Понедельник");
-                break;
-            case 2:
-                System.out.println("Вторник");
-                break;
-            case 3:
-                System.out.println("Среда");
-                break;
-            case 4:
-                System.out.println("Четверг");
-                break;
-            case 5:
-                System.out.println("Пятница");
-                break;
-            case 6:
-                System.out.println("Суббота");
-                break;
-            case 7:
-                System.out.println("Воскресенье");
-                break;
-            default:
-                System.out.println("Введённое значение не верно");
-        }
-
+        String str = day(1);
+        System.out.println(str);
     }
 
-    public static int day(int x) {
-        return x;
+    public static String day(int x) {
+
+        String str;
+        switch (x) {
+            case 1:
+                str = "Понедельник";
+                break;
+            case 2:
+                str = "Вторник";
+                break;
+            case 3:
+                str = "Среда";
+                break;
+            case 4:
+                str = "Четверг";
+                break;
+            case 5:
+                str = "Пятница";
+                break;
+            case 6:
+                str = "Суббота";
+                break;
+            case 7:
+                str = "Воскресенье";
+                break;
+            default:
+                str = "Введённое значение не верно";
+        }
+        return str;
     }
 
 }
