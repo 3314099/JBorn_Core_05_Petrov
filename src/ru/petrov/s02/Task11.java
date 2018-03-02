@@ -8,18 +8,25 @@ public class Task11 {
 
         Scanner sc = new Scanner(System.in);
         System.out.println("Введите число:");
-        int a = sc.nextInt();
+        int number = sc.nextInt();
         sc.close();
 
-        for (int i = 1; i <= 9; i++) {
-            String str = mult(a, i);
-            System.out.println(str);
-        }
+        String str = multiplyNumber(number);
+        System.out.println(str);
+
     }
 
-    public static String mult(int a, int i) {
+    public static String multiplyNumber(int number) {
 
-        String str = a + "*" + i + "=" + a * i;
+        int i = 1;
+        String str = "";
+
+        while (i <= 9) {
+            str = str + number + "*" + i + "=" + number * i + "\r\n";
+            i++;
+
+        }
+
         return str;
 
     }
