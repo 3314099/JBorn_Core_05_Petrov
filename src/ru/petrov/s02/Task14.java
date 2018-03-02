@@ -11,18 +11,22 @@ public class Task14 {
         int a = sc.nextInt();
         sc.close();
 
-        for (int i = 0; i <= a; i++) {
-            String str = mult(i);
-            System.out.println(str);
-        }
+        String str = createTriangle(a);
+        System.out.println(str);
 
     }
 
-    public static String mult(int i) {
+    public static String createTriangle(int a) {
+
         String str = "";
 
-        for (int k = i; k > 0; k--) {
-            str = str + "*";
+        for (int i = 0; i <= a; i++) {
+
+            for (int k = i; k > 0; k--) {
+                str = str + "*";
+            }
+            str = str + "\r\n";
+
         }
 
         return str;
