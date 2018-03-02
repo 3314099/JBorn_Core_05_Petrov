@@ -11,12 +11,12 @@ public class Task01 {
         String word = sc.nextLine();
         sc.close();
 
-        String rts = skin(word);
+        String rts = printPalidrom(word);
         System.out.println(rts);
 
     }
 
-    public static String skin(String word) {
+    public static String printPalidrom(String word) {
 
         int len = word.length();
         String rts = "";
