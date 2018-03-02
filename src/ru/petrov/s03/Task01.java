@@ -11,12 +11,12 @@ public class Task01 {
         String word = sc.nextLine();
         sc.close();
 
-        String rts = printPalidrom(word);
+        String rts = printPalindrom(word);
         System.out.println(rts);
 
     }
 
-    public static String printPalidrom(String word) {
+    public static String printPalindrom(String word) {
 
         int len = word.length();
         String rts = "";
