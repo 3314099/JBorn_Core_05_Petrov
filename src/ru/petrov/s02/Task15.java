@@ -11,28 +11,30 @@ public class Task15 {
         int a = sc.nextInt();
         sc.close();
 
-        for (int i = 1; i <= a; i += 2) {
-            if (i > a) {
-                return;
-            }
-            String str = mult(a, i);
-            System.out.println(str);
-        }
+        String str = createTriangle(a);
+        System.out.println(str);
 
     }
 
-    public static String mult(int a, int i) {
+    public static String createTriangle(int a) {
+
+        if (a % 2 == 0) {
+            a++;
+        }
+
         String str = "";
 
-        int br = (a - i) / 2;
-        for (int k = 1; k <= br; k++) {
-            str = str + " ";
-        }
-        for (int k = 1; k <= i; k++) {
-            str = str + "*";
-        }
-        for (int k = 1; k <= br; k++) {
-            str = str + " ";
+        for (int i = 0; i <= a; i += 2) {
+
+            for (int k = (a - i) / 2 - 1; k >= 0; k--) {
+                str = str + " ";
+            }
+
+            for (int k = i; k >= 0; k--) {
+                str = str + "*";
+            }
+            str = str + "\r\n";
+
         }
 
         return str;
