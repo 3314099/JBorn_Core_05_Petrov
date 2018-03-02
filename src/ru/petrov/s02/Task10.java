@@ -4,11 +4,11 @@ public class Task10 {
 
     public static void main(String[] args) {
 
-        String str = weekday(7);
+        String str = weekDay(7);
         System.out.println(str);
     }
 
-    public static String weekday(int x) {
+    public static String weekDay(int x) {
 
         String str;
         switch (x) {
