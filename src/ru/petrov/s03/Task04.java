@@ -21,13 +21,13 @@ public class Task04 {
         int len = text.length();
         int k = 1;
 
-
         for (int i = 0; i <= len - 1; i++) {
             if (text.charAt(i) == ' ') {
                 k++;
             }
 
         }
+
         return k;
 
     }
