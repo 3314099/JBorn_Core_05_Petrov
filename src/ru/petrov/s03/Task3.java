@@ -8,14 +8,14 @@ public class Task3 {
 
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("Введите слово:");
+        System.out.println("Введите текст:");
         String text = sc.nextLine();
         System.out.println("Введите символ:");
         String symb = sc.nextLine();
 
 
         int k = considerSymbols(text, symb);
-        System.out.println("Количество символа " + symb + " в тексте: " + k);
+        System.out.println("Количество символов " + symb + " в тексте: " + k);
 
     }
 
