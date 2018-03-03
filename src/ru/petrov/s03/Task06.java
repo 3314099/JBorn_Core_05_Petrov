@@ -25,10 +25,11 @@ public class Task06 {
             if (number.charAt(i) == '.') {
                 break;
             }
-            sum = +sum + Character.getNumericValue(number.charAt(i));
+            sum += Character.getNumericValue(number.charAt(i));
         }
 
         return sum;
 
     }
+
 }
