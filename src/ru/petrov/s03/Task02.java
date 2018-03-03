@@ -11,12 +11,12 @@ public class Task02 {
         String word = sc.nextLine();
         sc.close();
 
-        String str = printStars(word);
+        String str = makeStars(word);
         System.out.println(str);
 
     }
 
-    public static String printStars(String word) {
+    public static String makeStars(String word) {
 
         int len = word.length();
         String str;
