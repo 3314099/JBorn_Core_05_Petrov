@@ -21,16 +21,18 @@ public class Task05 {
         double circleArea = Math.PI * Math.pow(radius, 2);
         double squareArea = Math.pow(side, 2);
 
-        int com;
+        int result;
 
         if (circleArea > squareArea) {
-            com = 2;
+            result = 2;
         } else if (circleArea == squareArea) {
-            com = 1;
+            result = 1;
         } else {
-            com = 0;
+            result = 0;
         }
 
-        return com;
+        return result;
+
     }
+
 }
