@@ -18,15 +18,13 @@ public class Task02 {
 
     public static String makeStars(String word) {
 
-        int len = word.length();
-        String str;
-        String stars = "";
+        StringBuilder stars = new StringBuilder();
 
-        for (int i = 1; i <= len; i++) {
-            stars = stars + "*";
+        for (int i = 0; i <= word.length() - 1; i++) {
+            stars.append('*');
         }
-        str = stars + word + stars;
-        return str;
+
+        return stars + word + stars;
 
     }
 
