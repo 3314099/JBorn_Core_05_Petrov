@@ -17,7 +17,6 @@ public class Task07 {
     public static boolean isPalindrome(int x) {
 
         boolean isPal = (x / 100 == x % 10);
-        System.out.println(x / 100 + "==" + x % 10);
 
         return isPal;
 
