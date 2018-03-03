@@ -4,11 +4,11 @@ public class Task05 {
 
     public static void main(String[] args) {
 
-        int com = comparison(3.94, 7);
+        int result = comparison(3.95, 7);
 
-        if (com == 2) {
+        if (result == 2) {
             System.out.println("Площадь круга больше площади квадрата");
-        } else if (com == 1) {
+        } else if (result == 1) {
             System.out.println("Площадь квадрата и площадь круга равны");
         } else {
             System.out.println("Площадь квадрата больше площади круга");
@@ -21,17 +21,13 @@ public class Task05 {
         double circleArea = Math.PI * Math.pow(radius, 2);
         double squareArea = Math.pow(side, 2);
 
-        int result;
-
         if (circleArea > squareArea) {
-            result = 2;
+            return 2;
         } else if (circleArea == squareArea) {
-            result = 1;
+            return 1;
         } else {
-            result = 0;
+            return 0;
         }
-
-        return result;
 
     }
 
