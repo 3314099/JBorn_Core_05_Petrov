@@ -3,6 +3,7 @@ package ru.petrov.s03;
 import java.util.Scanner;
 
 public class Task05 {
+
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
@@ -34,7 +35,6 @@ public class Task05 {
                 pal = false;
                 break;
             }
-            System.out.println(word.charAt(i) + "=" + word.charAt(k - 1));
 
             k--;
         }
