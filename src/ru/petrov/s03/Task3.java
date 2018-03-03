@@ -11,7 +11,7 @@ public class Task3 {
         System.out.println("Введите текст:");
         String text = sc.nextLine();
         System.out.println("Введите символ:");
-        String symb = sc.nextLine();
+        char symb = sc.next().charAt(0);
 
 
         int k = considerSymbols(text, symb);
@@ -19,18 +19,18 @@ public class Task3 {
 
     }
 
-    public static int considerSymbols(String text, String symb) {
+    public static int considerSymbols(String text, char symb) {
 
         int len = text.length();
         int k = 0;
-        char sym = symb.charAt(0);
 
         for (int i = 0; i <= len - 1; i++) {
-            if (text.charAt(i) == sym) {
+            if (text.charAt(i) == symb) {
                 k++;
             }
 
         }
+
         return k;
 
     }
