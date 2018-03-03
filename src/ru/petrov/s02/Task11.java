@@ -11,20 +11,17 @@ public class Task11 {
         int number = sc.nextInt();
         sc.close();
 
-        String str = multiplyNumber(number);
+        String str = multiplyTable(number);
         System.out.println(str);
 
     }
 
-    public static String multiplyNumber(int number) {
+    public static String multiplyTable(int number) {
 
-        int i = 1;
         String str = "";
 
-        while (i <= 9) {
+        for (int i = 1; i <= 9; i++) {
             str = str + number + "*" + i + "=" + number * i + "\r\n";
-            i++;
-
         }
 
         return str;
