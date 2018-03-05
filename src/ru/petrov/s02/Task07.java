@@ -4,7 +4,7 @@ public class Task07 {
 
     public static void main(String[] args) {
 
-        boolean isPal = isPalindrome(434);
+        boolean isPal = isPalindrome(435);
 
         if (isPal == true) {
             System.out.println("Число является палиндромом");
@@ -16,9 +16,7 @@ public class Task07 {
 
     public static boolean isPalindrome(int x) {
 
-        boolean isPal = (x / 100 == x % 10);
-
-        return isPal;
+        return (x / 100 == x % 10);
 
     }
 
