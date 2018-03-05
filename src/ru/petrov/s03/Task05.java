@@ -11,9 +11,9 @@ public class Task05 {
         System.out.println("Введите слово:");
         word = sc.nextLine();
 
-        Boolean pal = palindrome(word);
+        Boolean isPal = isPalindrome(word);
 
-        if (pal) {
+        if (isPal) {
             System.out.println("Слово: " + word + " является перевёртышем");
         } else {
             System.out.println("Слово: " + word + " не является перевёртышем");
@@ -21,25 +21,19 @@ public class Task05 {
 
     }
 
-    public static boolean palindrome(String word) {
+    public static boolean isPalindrome(String word) {
 
         int len = word.length();
-        int k = len;
-        boolean pal = true;
 
         for (int i = 0; i <= len - 1; i++) {
 
-            if (pal == true && word.charAt(i) == word.charAt(k - 1)) {
-                pal = true;
-            } else {
-                pal = false;
-                break;
-            }
-
-            k--;
+            if (word.charAt(i) != word.charAt(len - i - 1))
+                return false;
         }
-        return pal;
+
+        return true;
 
     }
+
 }
 
