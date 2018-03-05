@@ -17,9 +17,11 @@ public class Task04 {
 
     public static int comparison(double km, double foot) {
 
-        if (km > foot * 0.000305) {
+        double footToKm  = foot * 0.000305;
+
+        if (km > footToKm) {
             return 2;
-        } else if (km == foot * 0.000305) {
+        } else if (km == footToKm) {
             return 1;
         } else {
             return 0;
