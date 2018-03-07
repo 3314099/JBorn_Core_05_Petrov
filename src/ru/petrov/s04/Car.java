@@ -65,12 +65,11 @@ public class Car {
     }
 
     @Override
-    public String toString(){
+    public String toString() {
         return " Автомобиль: " + model + "-" + brand + ", Дата выпуска: " + dateOfIssue +
                 ", гос номер: " + stateNumber +
                 ", пробег в км: " + aRun +
                 ':';
     }
-
 
 }
