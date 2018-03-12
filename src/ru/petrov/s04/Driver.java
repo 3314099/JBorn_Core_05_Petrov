@@ -2,23 +2,23 @@ package ru.petrov.s04;
 
 public class Driver {
 
-    private String name = "";
-    private String surname = "Не указан";
-    private String middleName = "";
-    private String dateOfBirth = "";
+    private String name;
+    private String surname;
+    private String middleName;
+    private String dateOfBirth;
     private int drivingExperience;
-    private String car = "Автомобиль отсутствует";
+    private Car car;
+
 
     public Driver() {
     }
 
-    public Driver(String name, String surname, String car) {
+    public Driver(String name, Car car) {
         this.name = name;
-        this.surname = surname;
         this.car = car;
     }
 
-    public Driver(String name, String surname, String middleName, String dateOfBirth, int drivingExperience, String car) {
+    public Driver(String name, String surname, String middleName, String dateOfBirth, int drivingExperience, Car car) {
         this.name = name;
         this.surname = surname;
         this.middleName = middleName;
@@ -48,7 +48,7 @@ public class Driver {
     }
 
     public void setMiddleName(String middleName) {
-        this.middleName = middleName + ", ";
+        this.middleName = middleName;
     }
 
     public String getDateOfBirth() {
@@ -67,18 +67,17 @@ public class Driver {
         this.drivingExperience = drivingExperience;
     }
 
-    public String getCar() {
+    public Car getCar() {
         return car;
     }
 
-    public void setCar(String car) {
+    public void setCar(Car car) {
         this.car = car;
     }
 
     @Override
     public String toString() {
-        return "Водитель: " + surname + " " + name + " " + middleName + dateOfBirth + ", Стаж: " + drivingExperience +
-                "лет. " + car;
+        return "Водитель: " + surname + " " + name + " " + middleName + ", " + dateOfBirth + ", Стаж: " + drivingExperience +
+                " лет. " + car;
     }
-
 }

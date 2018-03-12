@@ -2,10 +2,10 @@ package ru.petrov.s04;
 
 public class Car {
 
-    private String model = "Нет сведений";
-    private String brand = "";
-    private String dateOfIssue = "Нет сведений";
-    private String stateNumber = "Нет сведений";
+    private String model;
+    private String brand;
+    private String dateOfIssue;
+    private String stateNumber;
     private double aRun;
 
     public Car() {
@@ -68,8 +68,7 @@ public class Car {
     public String toString() {
         return " Автомобиль: " + model + "-" + brand + ", Дата выпуска: " + dateOfIssue +
                 ", гос номер: " + stateNumber +
-                ", пробег в км: " + aRun +
-                ':';
+                ", пробег в км: " + aRun;
     }
 
 }
